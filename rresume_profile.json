@@ -1,0 +1,30 @@
+{
+  "skills": [
+    "Python",
+    "SQL",
+    "Power BI",
+    "Tableau",
+    "Machine Learning",
+    "Data Analysis",
+    "Pandas",
+    "NumPy",
+    "Scikit-Learn"
+  ],
+  "preferred_locations": [
+    "Hyderabad",
+    "Pune"
+  ],
+  "preferred_titles": [
+    "Data Analyst",
+    "Associate Data Analyst",
+    "Junior Data Analyst",
+    "Business Analyst",
+    "Power BI Analyst"
+  ],
+  "exclude_titles": [
+    "Senior",
+    "Lead",
+    "Manager",
+    "Principal"
+  ]
+}
