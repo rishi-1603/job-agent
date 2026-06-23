@@ -19,4 +19,7 @@ jobs:
           python-version: "3.11"
 
       - name: Run Job Agent
-        run: echo "Job Agent Started"
+        env:
+          EMAIL_USER: ${{ secrets.EMAIL_USER }}
+          EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+        run: python job_agent.py
