@@ -19,4 +19,15 @@ headers = {
 response = requests.get(url, headers=headers, params=querystring)
 
 print("Status Code:", response.status_code)
-print(response.text[:500])
+
+if response.status_code == 200:
+    data = response.json()
+
+    jobs = data.get("data", [])
+
+    for job in jobs[:10]:
+        print("=" * 50)
+        print("Company:", job.get("employer_name"))
+        print("Role:", job.get("job_title"))
+        print("Location:", job.get("job_location"))
+        print("Apply:", job.get("job_apply_link"))
